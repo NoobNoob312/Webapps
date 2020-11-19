@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel='stylesheet' href='/stylesheets/login.css' type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title><%= title %></title>
+    <style>
+        body {
+            /*background-image: url("images/bglogin.jpg");*/
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+<h1><%= title %></h1>
+<div id="login-form">
+    <form class="col-md-12 login-form" method="post" action="/login">
+        <!--<label for="username">Username:</label><br />-->
+        <input type="text" class="form-control login" id="username" name="username" placeholder="Username"/>
+        <!--<label for="password">Password:</label><br />-->
+        <input type="password" class="form-control login" id="password" name="password" placeholder="Passwort"/>
+        <button class="btn btn-primary col-md-12 login-btn" type="submit">Login</button>
+    </form>
+</div>
+</body>
+</html>
